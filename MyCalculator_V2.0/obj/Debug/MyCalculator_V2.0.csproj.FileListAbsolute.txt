@@ -1,0 +1,10 @@
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\bin\Debug\MyCalculator_V2.0.exe.config
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\bin\Debug\MyCalculator_V2.0.exe
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\bin\Debug\MyCalculator_V2.0.pdb
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\obj\Debug\MyCalculator_V2.0.csprojAssemblyReference.cache
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\obj\Debug\MyCalculator_V2._0.Form1.resources
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\obj\Debug\MyCalculator_V2._0.Properties.Resources.resources
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\obj\Debug\MyCalculator_V2.0.csproj.GenerateResource.cache
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\obj\Debug\MyCalculator_V2.0.csproj.CoreCompileInputs.cache
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\obj\Debug\MyCalculator_V2.0.exe
+C:\Users\tess7\source\repos\MyCalculator_V2.0\MyCalculator_V2.0\obj\Debug\MyCalculator_V2.0.pdb

@@ -16,5 +16,10 @@ namespace MyCalculator_V2._0
         {
             InitializeComponent();
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            display.Text += 1;
+        }
     }
 }
