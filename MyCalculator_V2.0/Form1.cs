@@ -157,5 +157,11 @@ namespace MyCalculator_V2._0
                 }
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            display.Clear();
+            display.Text = "0";
+        }
     }
 }
