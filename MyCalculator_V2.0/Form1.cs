@@ -137,5 +137,10 @@ namespace MyCalculator_V2._0
                 display.Text += 9;
             }
         }
+
+        private void btnPoint_Click(object sender, EventArgs e)
+        {
+            display.Text += ".";
+        }
     }
 }
