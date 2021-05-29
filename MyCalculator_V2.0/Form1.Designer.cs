@@ -47,7 +47,7 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnPoint = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.display = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnClear
@@ -297,18 +297,18 @@
             this.btnPoint.UseVisualStyleBackColor = true;
             this.btnPoint.Click += new System.EventHandler(this.btnPoint_Click);
             // 
-            // textBox1
+            // display
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Silver;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(5, 6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(298, 67);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.display.BackColor = System.Drawing.Color.Silver;
+            this.display.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.display.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.display.Location = new System.Drawing.Point(5, 6);
+            this.display.Multiline = true;
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(298, 67);
+            this.display.TabIndex = 19;
+            this.display.Text = "0";
+            this.display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
@@ -316,7 +316,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(308, 372);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.display);
             this.Controls.Add(this.btnPoint);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn3);
@@ -362,7 +362,7 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnPoint;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox display;
     }
 }
 
