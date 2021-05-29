@@ -333,6 +333,7 @@
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.display);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
