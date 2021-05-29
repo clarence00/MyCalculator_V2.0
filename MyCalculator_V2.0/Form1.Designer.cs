@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.display = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnMulti = new System.Windows.Forms.Button();
@@ -48,20 +47,8 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnPoint = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // display
-            // 
-            this.display.BackColor = System.Drawing.Color.Silver;
-            this.display.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.display.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.display.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.display.Location = new System.Drawing.Point(5, 8);
-            this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(298, 66);
-            this.display.TabIndex = 0;
-            this.display.Text = "0";
-            this.display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnClear
             // 
@@ -89,6 +76,7 @@
             this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "<-";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnMulti
             // 
@@ -309,12 +297,26 @@
             this.btnPoint.UseVisualStyleBackColor = true;
             this.btnPoint.Click += new System.EventHandler(this.btnPoint_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Silver;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(5, 6);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(298, 67);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(308, 372);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnPoint);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn3);
@@ -333,17 +335,15 @@
             this.Controls.Add(this.btnMulti);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.display);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label display;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnMulti;
@@ -362,6 +362,7 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnPoint;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
