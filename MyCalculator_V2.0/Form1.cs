@@ -151,6 +151,10 @@ namespace MyCalculator_V2._0
             if (length > 0)
             {
                 display.Text = display.Text.Remove(length -1, 1);
+                if (display.Text == "")
+                {
+                    display.Text = "0";
+                }
             }
         }
     }
