@@ -32,7 +32,14 @@ namespace MyCalculator_V2._0
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            display.Text += 0;
+            if (display.Text == "0")
+            {
+                display.Text = "0";
+            }
+            else
+            {
+                display.Text += 0;
+            }
         }
 
         private void btn2_Click(object sender, EventArgs e)
