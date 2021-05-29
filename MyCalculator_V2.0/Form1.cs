@@ -140,7 +140,10 @@ namespace MyCalculator_V2._0
 
         private void btnPoint_Click(object sender, EventArgs e)
         {
-            display.Text += ".";
+            if (!display.Text.Contains("."))
+            {
+                display.Text += ".";
+            }
         }
     }
 }
