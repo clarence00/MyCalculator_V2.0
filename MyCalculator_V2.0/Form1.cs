@@ -23,7 +23,8 @@ namespace MyCalculator_V2._0
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "1";
             }
@@ -35,7 +36,8 @@ namespace MyCalculator_V2._0
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "0";
             }
@@ -47,7 +49,8 @@ namespace MyCalculator_V2._0
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "2";
             }
@@ -59,7 +62,8 @@ namespace MyCalculator_V2._0
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "3";
             }
@@ -71,7 +75,8 @@ namespace MyCalculator_V2._0
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "4";
             }
@@ -83,7 +88,8 @@ namespace MyCalculator_V2._0
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "5";
             }
@@ -95,7 +101,8 @@ namespace MyCalculator_V2._0
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "6";
             }
@@ -107,7 +114,8 @@ namespace MyCalculator_V2._0
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "7";
             }
@@ -119,7 +127,8 @@ namespace MyCalculator_V2._0
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") ||
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "8";
             }
@@ -131,7 +140,8 @@ namespace MyCalculator_V2._0
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined"))
+            if ((display.Text == "0") || (display.Text == "Undefined") || 
+                (display.Text == "Syntax Error"))
             {
                 display.Text = "9";
             }
@@ -170,36 +180,50 @@ namespace MyCalculator_V2._0
 
         private void operation_Click(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            operation = button.Text;
-            num1 = Double.Parse(display.Text);
-            display.Text = "";
+            try
+            {
+                Button button = (Button)sender;
+                num1 = Double.Parse(display.Text);
+                operation = button.Text;
+                display.Text = "";
+            }
+            catch
+            {
+                display.Text = "Syntax Error";
+            }
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-            num2 = Double.Parse(display.Text);
-            switch(operation)
+            try
             {
-                case "+":
-                    display.Text = (num1 + num2).ToString();
-                    break;
-                case "-":
-                    display.Text = (num1 - num2).ToString();
-                    break;
-                case "x":
-                    display.Text = (num1 * num2).ToString();
-                    break;
-                case "/":
-                    if (num2 == 0)
-                    {
-                        display.Text = "Undefined";
-                    }
-                    else
-                    {
-                        display.Text = (num1 / num2).ToString();
-                    }
-                    break;
+                num2 = Double.Parse(display.Text);
+                switch (operation)
+                {
+                    case "+":
+                        display.Text = (num1 + num2).ToString();
+                        break;
+                    case "-":
+                        display.Text = (num1 - num2).ToString();
+                        break;
+                    case "x":
+                        display.Text = (num1 * num2).ToString();
+                        break;
+                    case "/":
+                        if (num2 == 0)
+                        {
+                            display.Text = "Undefined";
+                        }
+                        else
+                        {
+                            display.Text = (num1 / num2).ToString();
+                        }
+                        break;
+                }        
+            }
+            catch
+            {
+                display.Text = "Syntax Error";
             }
         }
     }
