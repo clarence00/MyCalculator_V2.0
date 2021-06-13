@@ -191,7 +191,9 @@ namespace MyCalculator_V2._0
                 case "x":
                     display.Text = (num1 * num2).ToString();
                     break;
-                
+                case "/":
+                    display.Text = (num1 / num2).ToString();
+                    break;
             }
         }
     }
