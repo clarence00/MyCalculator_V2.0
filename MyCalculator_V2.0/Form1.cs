@@ -176,5 +176,17 @@ namespace MyCalculator_V2._0
             num1 = Double.Parse(display.Text);
             display.Text = "";
         }
+
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            num2 = Double.Parse(display.Text);
+            switch(operation)
+            {
+                case "+":
+                    display.Text = (num1 + num2).ToString();
+                    break;
+                
+            }
+        }
     }
 }
