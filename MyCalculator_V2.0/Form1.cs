@@ -23,7 +23,7 @@ namespace MyCalculator_V2._0
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "1";
             }
@@ -35,7 +35,7 @@ namespace MyCalculator_V2._0
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "0";
             }
@@ -47,7 +47,7 @@ namespace MyCalculator_V2._0
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "2";
             }
@@ -59,7 +59,7 @@ namespace MyCalculator_V2._0
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "3";
             }
@@ -71,7 +71,7 @@ namespace MyCalculator_V2._0
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "4";
             }
@@ -83,7 +83,7 @@ namespace MyCalculator_V2._0
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "5";
             }
@@ -95,7 +95,7 @@ namespace MyCalculator_V2._0
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "6";
             }
@@ -107,7 +107,7 @@ namespace MyCalculator_V2._0
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "7";
             }
@@ -119,7 +119,7 @@ namespace MyCalculator_V2._0
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0")
+            if ((display.Text == "0") || (display.Text == "Undefined"))
             {
                 display.Text = "8";
             }
@@ -151,7 +151,7 @@ namespace MyCalculator_V2._0
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            var length = display.Text.Length;
+            int length = display.Text.Length;
             if (length > 0)
             {
                 display.Text = display.Text.Remove(length -1, 1);
