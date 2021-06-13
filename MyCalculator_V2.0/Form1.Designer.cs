@@ -91,6 +91,7 @@
             this.btnMulti.TabIndex = 3;
             this.btnMulti.Text = "x";
             this.btnMulti.UseVisualStyleBackColor = true;
+            this.btnMulti.Click += new System.EventHandler(this.operation_Click);
             // 
             // btnDIvi
             // 
@@ -104,6 +105,7 @@
             this.btnDIvi.TabIndex = 4;
             this.btnDIvi.Text = "/";
             this.btnDIvi.UseVisualStyleBackColor = true;
+            this.btnDIvi.Click += new System.EventHandler(this.operation_Click);
             // 
             // btnSubs
             // 
@@ -117,6 +119,7 @@
             this.btnSubs.TabIndex = 5;
             this.btnSubs.Text = "-";
             this.btnSubs.UseVisualStyleBackColor = true;
+            this.btnSubs.Click += new System.EventHandler(this.operation_Click);
             // 
             // btnAdd
             // 
@@ -130,6 +133,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.operation_Click);
             // 
             // btnEqual
             // 

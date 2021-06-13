@@ -12,6 +12,11 @@ namespace MyCalculator_V2._0
 {
     public partial class Form1 : Form
     {
+        Double outputValue;
+        Double num1;
+        Double num2;
+        String operation;
+
         public Form1()
         {
             InitializeComponent();
@@ -162,6 +167,14 @@ namespace MyCalculator_V2._0
         {
             display.Clear();
             display.Text = "0";
+        }
+
+        private void operation_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            operation = button.Text;
+            num1 = Double.Parse(display.Text);
+            display.Text = "";
         }
     }
 }
