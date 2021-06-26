@@ -48,6 +48,7 @@
             this.btn0 = new System.Windows.Forms.Button();
             this.btnPoint = new System.Windows.Forms.Button();
             this.display = new System.Windows.Forms.TextBox();
+            this.preview = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClear
@@ -57,7 +58,7 @@
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(6, 78);
+            this.btnClear.Location = new System.Drawing.Point(6, 127);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(72, 55);
             this.btnClear.TabIndex = 1;
@@ -71,7 +72,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.Location = new System.Drawing.Point(81, 78);
+            this.btnRemove.Location = new System.Drawing.Point(81, 127);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(72, 55);
             this.btnRemove.TabIndex = 2;
@@ -85,7 +86,7 @@
             this.btnMulti.FlatAppearance.BorderSize = 0;
             this.btnMulti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMulti.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMulti.Location = new System.Drawing.Point(156, 78);
+            this.btnMulti.Location = new System.Drawing.Point(156, 127);
             this.btnMulti.Name = "btnMulti";
             this.btnMulti.Size = new System.Drawing.Size(72, 55);
             this.btnMulti.TabIndex = 3;
@@ -99,7 +100,7 @@
             this.btnDIvi.FlatAppearance.BorderSize = 0;
             this.btnDIvi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDIvi.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDIvi.Location = new System.Drawing.Point(231, 78);
+            this.btnDIvi.Location = new System.Drawing.Point(231, 127);
             this.btnDIvi.Name = "btnDIvi";
             this.btnDIvi.Size = new System.Drawing.Size(72, 55);
             this.btnDIvi.TabIndex = 4;
@@ -113,7 +114,7 @@
             this.btnSubs.FlatAppearance.BorderSize = 0;
             this.btnSubs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubs.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubs.Location = new System.Drawing.Point(231, 136);
+            this.btnSubs.Location = new System.Drawing.Point(231, 185);
             this.btnSubs.Name = "btnSubs";
             this.btnSubs.Size = new System.Drawing.Size(72, 55);
             this.btnSubs.TabIndex = 5;
@@ -127,7 +128,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(231, 194);
+            this.btnAdd.Location = new System.Drawing.Point(231, 243);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(72, 55);
             this.btnAdd.TabIndex = 6;
@@ -141,7 +142,7 @@
             this.btnEqual.FlatAppearance.BorderSize = 0;
             this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEqual.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEqual.Location = new System.Drawing.Point(231, 252);
+            this.btnEqual.Location = new System.Drawing.Point(231, 301);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(72, 113);
             this.btnEqual.TabIndex = 7;
@@ -155,7 +156,7 @@
             this.btn7.FlatAppearance.BorderSize = 0;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(6, 136);
+            this.btn7.Location = new System.Drawing.Point(6, 185);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(72, 55);
             this.btn7.TabIndex = 8;
@@ -169,7 +170,7 @@
             this.btn8.FlatAppearance.BorderSize = 0;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(81, 136);
+            this.btn8.Location = new System.Drawing.Point(81, 185);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(72, 55);
             this.btn8.TabIndex = 9;
@@ -183,7 +184,7 @@
             this.btn9.FlatAppearance.BorderSize = 0;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(156, 136);
+            this.btn9.Location = new System.Drawing.Point(156, 185);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(72, 55);
             this.btn9.TabIndex = 10;
@@ -197,7 +198,7 @@
             this.btn4.FlatAppearance.BorderSize = 0;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(6, 194);
+            this.btn4.Location = new System.Drawing.Point(6, 243);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(72, 55);
             this.btn4.TabIndex = 11;
@@ -211,7 +212,7 @@
             this.btn5.FlatAppearance.BorderSize = 0;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(81, 194);
+            this.btn5.Location = new System.Drawing.Point(81, 243);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(72, 55);
             this.btn5.TabIndex = 12;
@@ -225,7 +226,7 @@
             this.btn6.FlatAppearance.BorderSize = 0;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(156, 194);
+            this.btn6.Location = new System.Drawing.Point(156, 243);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(72, 55);
             this.btn6.TabIndex = 13;
@@ -239,7 +240,7 @@
             this.btn1.FlatAppearance.BorderSize = 0;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(6, 252);
+            this.btn1.Location = new System.Drawing.Point(6, 301);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(72, 55);
             this.btn1.TabIndex = 14;
@@ -253,7 +254,7 @@
             this.btn2.FlatAppearance.BorderSize = 0;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(81, 252);
+            this.btn2.Location = new System.Drawing.Point(81, 301);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(72, 55);
             this.btn2.TabIndex = 15;
@@ -267,7 +268,7 @@
             this.btn3.FlatAppearance.BorderSize = 0;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(156, 252);
+            this.btn3.Location = new System.Drawing.Point(156, 301);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(72, 55);
             this.btn3.TabIndex = 16;
@@ -281,7 +282,7 @@
             this.btn0.FlatAppearance.BorderSize = 0;
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn0.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(6, 310);
+            this.btn0.Location = new System.Drawing.Point(6, 359);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(147, 55);
             this.btn0.TabIndex = 17;
@@ -295,7 +296,7 @@
             this.btnPoint.FlatAppearance.BorderSize = 0;
             this.btnPoint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPoint.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPoint.Location = new System.Drawing.Point(156, 310);
+            this.btnPoint.Location = new System.Drawing.Point(156, 359);
             this.btnPoint.Name = "btnPoint";
             this.btnPoint.Size = new System.Drawing.Size(72, 55);
             this.btnPoint.TabIndex = 18;
@@ -308,7 +309,7 @@
             this.display.BackColor = System.Drawing.Color.Silver;
             this.display.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.display.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.display.Location = new System.Drawing.Point(5, 6);
+            this.display.Location = new System.Drawing.Point(5, 55);
             this.display.Multiline = true;
             this.display.Name = "display";
             this.display.Size = new System.Drawing.Size(298, 67);
@@ -316,12 +317,25 @@
             this.display.Text = "0";
             this.display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // preview
+            // 
+            this.preview.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.preview.AutoEllipsis = true;
+            this.preview.BackColor = System.Drawing.Color.Gray;
+            this.preview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.preview.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.preview.Location = new System.Drawing.Point(6, 9);
+            this.preview.Name = "preview";
+            this.preview.Size = new System.Drawing.Size(297, 43);
+            this.preview.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(308, 372);
+            this.ClientSize = new System.Drawing.Size(308, 420);
+            this.Controls.Add(this.preview);
             this.Controls.Add(this.display);
             this.Controls.Add(this.btnPoint);
             this.Controls.Add(this.btn0);
@@ -369,6 +383,7 @@
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnPoint;
         private System.Windows.Forms.TextBox display;
+        private System.Windows.Forms.Label preview;
     }
 }
 
