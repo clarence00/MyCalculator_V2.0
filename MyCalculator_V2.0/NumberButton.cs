@@ -22,7 +22,7 @@ namespace MyCalculator_V2._0
         public string Preview { get => preview; set => preview = value; }
         public string Operators { get => operators; set => operators = value; }
 
-        public void operate()
+        public void add_operator()
         {
             Num1 = Double.Parse(Display);
             Operation = Operators;
@@ -30,9 +30,24 @@ namespace MyCalculator_V2._0
             Preview = Num1 + Operation;
         }
 
-        public void process()
+        public void solving_process()
         {
-            
+            Num2 = Double.Parse(Display);
+            switch (Operation)
+            {
+                case "+":
+                    Display = (Num1 + Num2).ToString();
+                    break;
+                case "-":
+                    Display = (Num1 - Num2).ToString();
+                    break;
+                case "x":
+                    Display = (Num1 * Num2).ToString();
+                    break;
+                case "/":
+                    Display = (Num1 / Num2).ToString();
+                    break;
+            }
         }
     }
 }

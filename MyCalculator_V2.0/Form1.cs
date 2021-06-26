@@ -181,16 +181,28 @@ namespace MyCalculator_V2._0
         {
             try
             {
+                numberbtn.Display = display.Text;
+                numberbtn.Preview = preview.Text;
+                Button button = (Button)sender;
+
                 if (numberbtn.Operation == "")
                 {
-                    Button button = (Button)sender;
                     numberbtn.Operators = button.Text;
-                    numberbtn.Display = display.Text;
-                    numberbtn.Preview = preview.Text;
-                    numberbtn.operate();
+                    numberbtn.add_operator();
 
                     display.Text = numberbtn.Display;
                     preview.Text = numberbtn.Preview;
+                }
+                else
+                {
+                    numberbtn.solving_process();
+
+                    display.Text = numberbtn.Display;
+                    preview.Text = numberbtn.Preview;
+                    numberbtn.Num1 = double.Parse(display.Text);
+                    numberbtn.Operation = button.Text;
+                    preview.Text = numberbtn.Num1 + numberbtn.Operation;
+                    display.Text = "";
                 }
             }
             catch
@@ -203,29 +215,10 @@ namespace MyCalculator_V2._0
         {
             try
             {
-                numberbtn.Num2 = Double.Parse(display.Text);
-                switch (numberbtn.Operation)
-                {
-                    case "+":
-                        display.Text = (numberbtn.Num1 + numberbtn.Num2).ToString();
-                        break;
-                    case "-":
-                        display.Text = (numberbtn.Num1 - numberbtn.Num2).ToString();
-                        break;
-                    case "x":
-                        display.Text = (numberbtn.Num1 * numberbtn.Num2).ToString();
-                        break;
-                    case "/":
-                        if (numberbtn.Num2 == 0)
-                        {
-                            display.Text = "Undefined";
-                        }
-                        else
-                        {
-                            display.Text = (numberbtn.Num1 / numberbtn.Num2).ToString();
-                        }
-                        break;
-                }
+                numberbtn.solving_process();
+
+                display.Text = numberbtn.Display;
+                preview.Text = numberbtn.Preview;
             }
             catch
             {
