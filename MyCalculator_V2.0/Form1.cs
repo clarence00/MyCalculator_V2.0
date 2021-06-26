@@ -261,6 +261,7 @@ namespace MyCalculator_V2._0
                 display.Text = "Syntax Error";
             }
             preview.Text = "";
+            operation = "";
         }
     }
 }
