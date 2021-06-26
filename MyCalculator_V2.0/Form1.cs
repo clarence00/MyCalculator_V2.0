@@ -181,43 +181,16 @@ namespace MyCalculator_V2._0
         {
             try
             {
-                Button button = (Button)sender;
                 if (numberbtn.Operation == "")
                 {
-                    numberbtn.Num1 = Double.Parse(display.Text);
-                    numberbtn.Operation = button.Text;
-                    display.Text = "";
-                    preview.Text = numberbtn.Num1 + numberbtn.Operation;
-                }
-                else
-                {
-                    numberbtn.Num2 = Double.Parse(display.Text);
-                    switch (numberbtn.Operation)
-                    {
-                        case "+":
-                            display.Text = (numberbtn.Num1 + numberbtn.Num2).ToString();
-                            break;
-                        case "-":
-                            display.Text = (numberbtn.Num1 - numberbtn.Num2).ToString();
-                            break;
-                        case "x":
-                            display.Text = (numberbtn.Num1 * numberbtn.Num2).ToString();
-                            break;
-                        case "/":
-                            if (numberbtn.Num2 == 0)
-                            {
-                                display.Text = "Undefined";
-                            }
-                            else
-                            {
-                                display.Text = (numberbtn.Num1 / numberbtn.Num2).ToString();
-                            }
-                            break;
-                    }
-                    numberbtn.Num1 = double.Parse(display.Text);
-                    numberbtn.Operation = button.Text;
-                    preview.Text = numberbtn.Num1 + numberbtn.Operation;
-                    display.Text = "";
+                    Button button = (Button)sender;
+                    numberbtn.Operators = button.Text;
+                    numberbtn.Display = display.Text;
+                    numberbtn.Preview = preview.Text;
+                    numberbtn.operate();
+
+                    display.Text = numberbtn.Display;
+                    preview.Text = numberbtn.Preview;
                 }
             }
             catch
