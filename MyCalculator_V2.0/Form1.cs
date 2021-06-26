@@ -19,134 +19,14 @@ namespace MyCalculator_V2._0
             InitializeComponent();
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void Num_click(object sender, EventArgs e)
         {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "1";
-            }
-            else
-            {
-                display.Text += 1;
-            }
-        }
+            numberbtn.Display = display.Text;
+            Button number = (Button)sender;
+            numberbtn.Numclick = number.Text;
 
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "0";
-            }
-            else
-            {
-                display.Text += 0;
-            }
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "2";
-            }
-            else
-            {
-                display.Text += 2;
-            }
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "3";
-            }
-            else
-            {
-                display.Text += 3;
-            }
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "4";
-            }
-            else
-            {
-                display.Text += 4;
-            }
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "5";
-            }
-            else
-            {
-                display.Text += 5;
-            }
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "6";
-            }
-            else
-            {
-                display.Text += 6;
-            }
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "7";
-            }
-            else
-            {
-                display.Text += 7;
-            }
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") ||
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "8";
-            }
-            else
-            {
-                display.Text += 8;
-            }
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            if ((display.Text == "0") || (display.Text == "Undefined") || 
-                (display.Text == "Syntax Error"))
-            {
-                display.Text = "9";
-            }
-            else
-            {
-                display.Text += 9;
-            }
+            numberbtn.read_display();
+            display.Text = numberbtn.Display;
         }
 
         private void btnPoint_Click(object sender, EventArgs e)
@@ -215,6 +95,8 @@ namespace MyCalculator_V2._0
         {
             try
             {
+                numberbtn.Display = display.Text;
+                numberbtn.Preview = preview.Text;
                 numberbtn.solving_process();
 
                 display.Text = numberbtn.Display;
@@ -227,5 +109,6 @@ namespace MyCalculator_V2._0
             preview.Text = "";
             numberbtn.Operation = "";
         }
+
     }
 }

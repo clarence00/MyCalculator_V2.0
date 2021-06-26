@@ -10,6 +10,7 @@ namespace MyCalculator_V2._0
     {
         private double num1;
         private double num2;
+        private string numclick;
         private string operation = "";
         private string display;
         private string preview;
@@ -17,6 +18,7 @@ namespace MyCalculator_V2._0
 
         public double Num1 { get => num1; set => num1 = value; }
         public double Num2 { get => num2; set => num2 = value; }
+        public string Numclick { get => numclick; set => numclick = value; }
         public string Operation { get => operation; set => operation = value; }
         public string Display { get => display; set => display = value; }
         public string Preview { get => preview; set => preview = value; }
@@ -47,6 +49,19 @@ namespace MyCalculator_V2._0
                 case "/":
                     Display = (Num1 / Num2).ToString();
                     break;
+            }
+        }
+
+        public void read_display()
+        {
+            if ((Display == "0") || (Display == "Undefined") ||
+                (Display == "Syntax Error"))
+            {
+                Display = numclick;
+            }
+            else
+            {
+                Display += numclick;
             }
         }
     }
