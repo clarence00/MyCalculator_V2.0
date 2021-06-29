@@ -321,9 +321,10 @@
             // 
             this.preview.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.preview.AutoEllipsis = true;
-            this.preview.BackColor = System.Drawing.Color.Gray;
+            this.preview.BackColor = System.Drawing.Color.DimGray;
             this.preview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.preview.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.preview.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.preview.Location = new System.Drawing.Point(6, 9);
             this.preview.Name = "preview";
             this.preview.Size = new System.Drawing.Size(297, 43);
